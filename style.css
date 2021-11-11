@@ -38,32 +38,6 @@ header {
     align-items: center;
 }
 
-#leftArrow {
-    width: 5%;
-    max-height: 50px;
-}
-
-#bigImage {
-    width: 80%;
-    max-height: 400px;
-}
-
-#rightArrow {
-    width: 5%;
-    max-height: 50px;
-}
-
-#smallImageSection {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    margin-top: 10px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
 #smallImageSection img {
     width: 100%;
 }
@@ -71,6 +45,35 @@ header {
 #smallImageSection img:hover {
     border-style: solid;
     border-color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+    #leftArrow {
+        width: 5%;
+        max-height: 15px;
+    }
+    
+    #bigImage {
+        width: 80%;
+        max-height: 120px;
+    }
+    
+    #rightArrow {
+        width: 5%;
+        max-height: 15px;
+    }
+    
+    #smallImageSection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -103,25 +106,25 @@ header {
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 1025px){
     #leftArrow {
         width: 5%;
-        max-height: 15px;
+        max-height: 50px;
     }
     
     #bigImage {
         width: 80%;
-        max-height: 120px;
+        max-height: 400px;
     }
     
     #rightArrow {
         width: 5%;
-        max-height: 15px;
+        max-height: 50px;
     }
     
     #smallImageSection {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         margin-top: 10px;
         width: 90%;
         margin-left: 5%;
